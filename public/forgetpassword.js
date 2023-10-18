@@ -5,7 +5,7 @@ const p = document.getElementById('forgetA');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     try {
-        const result = await axios.post('http://localhost:3000/recover-account', {
+        const result = await axios.post('http://15.206.75.174:3000/recover-account', {
             email: document.getElementById('forgetEmail').value,
             name: document.getElementById('forgetName').value
         });
