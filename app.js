@@ -47,7 +47,10 @@ app.use('/recover-account', recoverAccount);
 app.use('/new-password', newPasswordRoutes);
 app.use('/download', downloadRoutes);
 app.use('/downloadLink', downloadLinkRoutes);
-
+app.use('/demo', (req, res) => {
+    res.send(`<h1>this is demo!</h1>`);
+    res.end();
+});
 app.use(express.static('public'));
 // app.use((req, res) => {
 //     res.sendFile(path.join(__dirname, `public/${req.url}`));
