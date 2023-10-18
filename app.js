@@ -31,7 +31,7 @@ const fP = require('./model/modelForgetPass');
 const DL = require('./model/modelDownloadLink');
 //routes
 
-
+app.use(express.static('public'));
 
 app.use(cors());
 app.use(helmet());
@@ -51,7 +51,7 @@ app.use('/demo', (req, res) => {
     res.send(`<h1>this is demo!</h1>`);
     res.end();
 });
-app.use(express.static('public'));
+
 // app.use((req, res) => {
 //     res.sendFile(path.join(__dirname, `public/${req.url}`));
 // });

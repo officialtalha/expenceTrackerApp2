@@ -47,8 +47,8 @@ exports.recoverAccountPost = async (req, res) => {
                 to: email,
                 subject: `Recover link to ${name}`,
                 text: "Expense tracker",
-                html: `<b>http://15.206.75.174:3000/new-password/${id}</b>
-                        <a href="http://15.206.75.174:3000/new-password/${id}" target="_blank">Click Here</a>`, // html body
+                html: `<b>http://localhost:3000/new-password/${id}</b>
+                        <a href="http://localhost:3000/new-password/${id}" target="_blank">Click Here</a>`, // html body
             };
 
             transporter.sendMail(mailOptions, function (error, info) {
