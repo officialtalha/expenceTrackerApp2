@@ -110,3 +110,4 @@
 {"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":6748,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-17T13:46:27.752Z","v":0}
 {"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":10148,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-17T13:53:00.958Z","v":0}
 {"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":20432,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-17T13:53:36.084Z","v":0}
+{"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":6240,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-18T11:51:49.329Z","v":0}
