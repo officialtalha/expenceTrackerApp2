@@ -3,7 +3,7 @@ const form = document.getElementById('form1');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const result = await axios.post('http://13.233.190.235:3000/signup', {
+    const result = await axios.post('http://3.110.148.64:3000/signup', {
         name: e.target.name.value,
         email: e.target.email.value,
         password: e.target.password.value
