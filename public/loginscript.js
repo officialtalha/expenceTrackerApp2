@@ -4,7 +4,7 @@ form.addEventListener('submit', async (e) => {
 
     e.preventDefault();
     try {
-        const result = await axios.post('http://3.110.148.64:3000/Login', {
+        const result = await axios.post('http://43.205.255.76:3000/Login', {
             email: e.target.email.value,
             password: e.target.password.value
         });

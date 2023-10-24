@@ -14,7 +14,7 @@ form.addEventListener('submit', async (e) => {
 
     try {
         //creating POST request to adding new expenses
-        const result = await axios.post('http://3.110.148.64:3000/add-expense', {
+        const result = await axios.post('http://43.205.255.76:3000/add-expense', {
             amount: e.target.amount.value,
             description: e.target.description.value,
             catogary: document.querySelector('#addExpCatogary').value,
@@ -40,7 +40,7 @@ form.addEventListener('submit', async (e) => {
         // lists.appendChild(deleteBtn);
 
         // deleteBtn.onclick = async () => {
-        //     await axios.delete(`http://3.110.148.64:3000/add-expense/${result.data.id}`, {
+        //     await axios.delete(`http://43.205.255.76:3000/add-expense/${result.data.id}`, {
         //         headers: {
         //             'Content-Type': 'application/json',
         //             'Authorization': token,
@@ -66,7 +66,7 @@ form.addEventListener('submit', async (e) => {
         h2.className = 'neon-text';
         h2.appendChild(document.createTextNode(`Welcome ${info.name}`));
         //sum of total expenses
-        const sum = await axios.get(`http://3.110.148.64:3000/add-expense/sum-expenses`, {
+        const sum = await axios.get(`http://43.205.255.76:3000/add-expense/sum-expenses`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': token,
@@ -75,7 +75,7 @@ form.addEventListener('submit', async (e) => {
         document.getElementById('totalExpense').innerText = `Total Expense Amount: ${sum.data.result[0].totalExpenses}`;
         //fetching all the expenses
         const getItemPerPage = localStorage.getItem('itemPerPage');
-        const result = await axios.get(`http://3.110.148.64:3000/add-expense/local/${getItemPerPage}`, {
+        const result = await axios.get(`http://43.205.255.76:3000/add-expense/local/${getItemPerPage}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': token,
@@ -103,7 +103,7 @@ form.addEventListener('submit', async (e) => {
             lists.appendChild(deleteBtn);
 
             deleteBtn.onclick = async () => {
-                await axios.delete(`http://3.110.148.64:3000/add-expense/${result.data.result[i].id}`, {
+                await axios.delete(`http://43.205.255.76:3000/add-expense/${result.data.result[i].id}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': token,
@@ -121,7 +121,7 @@ form.addEventListener('submit', async (e) => {
         prevBtn2.onclick = async () => {
             const curPage = Number(curBtn2.innerText) - 1;
             const itemPerPage = localStorage.getItem('itemPerPage');
-            const result = await axios.get(`http://3.110.148.64:3000/add-expense/${curPage}/${itemPerPage}`, {
+            const result = await axios.get(`http://43.205.255.76:3000/add-expense/${curPage}/${itemPerPage}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': token,
@@ -149,7 +149,7 @@ form.addEventListener('submit', async (e) => {
                 lists.appendChild(deleteBtn);
 
                 deleteBtn.onclick = async () => {
-                    await axios.delete(`http://3.110.148.64:3000/add-expense/${result.data.result[i].id}`, {
+                    await axios.delete(`http://43.205.255.76:3000/add-expense/${result.data.result[i].id}`, {
                         headers: {
                             'Content-Type': 'application/json',
                             'Authorization': token,
@@ -174,7 +174,7 @@ form.addEventListener('submit', async (e) => {
         nextBtn2.onclick = async () => {
             const curPage = Number(curBtn2.innerText) + 1;
             const itemPerPage = Number(localStorage.getItem('itemPerPage'));
-            const result = await axios.get(`http://3.110.148.64:3000/add-expense/${curPage}/${itemPerPage}`, {
+            const result = await axios.get(`http://43.205.255.76:3000/add-expense/${curPage}/${itemPerPage}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': token,
@@ -206,7 +206,7 @@ form.addEventListener('submit', async (e) => {
                     lists.appendChild(deleteBtn);
 
                     deleteBtn.onclick = async () => {
-                        await axios.delete(`http://3.110.148.64:3000/add-expense/${result.data.result[i].id}`, {
+                        await axios.delete(`http://43.205.255.76:3000/add-expense/${result.data.result[i].id}`, {
                             headers: {
                                 'Content-Type': 'application/json',
                                 'Authorization': token,
@@ -232,7 +232,7 @@ form.addEventListener('submit', async (e) => {
         }
 
         //premium code 
-        const premiumCheck = await axios.get(`http://3.110.148.64:3000/check-premium`, {
+        const premiumCheck = await axios.get(`http://43.205.255.76:3000/check-premium`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': token,
@@ -257,7 +257,7 @@ form.addEventListener('submit', async (e) => {
             //download button operations 
             downloadBtn.onclick = async () => {
                 try {
-                    const result = await axios.get(`http://3.110.148.64:3000/download`,
+                    const result = await axios.get(`http://43.205.255.76:3000/download`,
                         {
                             headers: {
                                 'Content-Type': 'application/json',
@@ -276,7 +276,7 @@ form.addEventListener('submit', async (e) => {
             }
             document.getElementById('rcntdwnld').removeAttribute('style');
             //download links code
-            const links = await axios.get(`http://3.110.148.64:3000/downloadLink`, {
+            const links = await axios.get(`http://43.205.255.76:3000/downloadLink`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': token,
@@ -314,7 +314,7 @@ form.addEventListener('submit', async (e) => {
             //next button operation
             nextBtn.onclick = async () => {
                 const curPage = Number(curBtn.innerText) + 1;
-                const links = await axios.get(`http://3.110.148.64:3000/downloadLink/${curPage}`, {
+                const links = await axios.get(`http://43.205.255.76:3000/downloadLink/${curPage}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': token,
@@ -349,7 +349,7 @@ form.addEventListener('submit', async (e) => {
             //prev button operation
             prevBtn.onclick = async () => {
                 const curPage = Number(curBtn.innerText) - 1;
-                const links = await axios.get(`http://3.110.148.64:3000/downloadLink/${curPage}`, {
+                const links = await axios.get(`http://43.205.255.76:3000/downloadLink/${curPage}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': token,
@@ -390,7 +390,7 @@ form.addEventListener('submit', async (e) => {
                         leaderboard.innerHTML = '';
                         leaderBtn.innerText = 'show leaderboard';
                     } else {
-                        const userSum = await axios.get(`http://3.110.148.64:3000/leaderboard`, {
+                        const userSum = await axios.get(`http://43.205.255.76:3000/leaderboard`, {
                             headers: {
                                 'Content-Type': 'application/json',
                                 'Authorization': token,
@@ -444,7 +444,7 @@ document.getElementById('dltAcntBtn').addEventListener('click', async (e) => {
 
     try {
         if (flag) {
-            await axios.delete(`http://3.110.148.64:3000/dltAc`, {
+            await axios.delete(`http://43.205.255.76:3000/dltAc`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': token,
@@ -468,7 +468,7 @@ document.getElementById('dltAcntBtn').addEventListener('click', async (e) => {
 //razor-pay code
 premiumBtn.addEventListener('click', async (e) => {
     try {
-        const result = await axios.get('http://3.110.148.64:3000/premium', {
+        const result = await axios.get('http://43.205.255.76:3000/premium', {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': token,
@@ -479,7 +479,7 @@ premiumBtn.addEventListener('click', async (e) => {
             "key": result.data.key_id,
             "order_id": result.data.order,
             "handler": async function (result) {
-                await axios.post('http://3.110.148.64:3000/premium', {
+                await axios.post('http://43.205.255.76:3000/premium', {
                     order_id: options.order_id,
                     payment_id: result.razorpay_payment_id,
                 },
