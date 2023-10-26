@@ -111,3 +111,8 @@
 {"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":10148,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-17T13:53:00.958Z","v":0}
 {"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":20432,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-17T13:53:36.084Z","v":0}
 {"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":6240,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-18T11:51:49.329Z","v":0}
+{"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":19276,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-25T14:59:17.748Z","v":0}
+{"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":29160,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-25T15:00:58.354Z","v":0}
+{"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":17808,"level":30,"msg":"server running on port http://localhost:3000","time":"2023-10-25T15:01:25.362Z","v":0}
+{"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":17808,"level":30,"msg":"Email sent: 250 Message queued as <b1e6d349-643a-7255-18fd-e79694dd3216@gmail.com>","time":"2023-10-25T15:17:20.198Z","v":0}
+{"name":"expense-tracker v1.0","hostname":"DESKTOP-MV9F3HU","pid":17808,"level":30,"msg":"Email sent: 250 Message queued as <f8e6b34f-3770-eec8-acfe-f1195d34c56f@gmail.com>","time":"2023-10-25T15:20:25.946Z","v":0}
