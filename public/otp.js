@@ -4,7 +4,7 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     try {
-        const result = await axios.post('http://13.233.22.109:3000/otp', {
+        const result = await axios.post('http://13.233.30.171:3000/otp', {
             otp: document.getElementById('otpField').value
         });
         console.log(result);
